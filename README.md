@@ -178,11 +178,11 @@ python app.py
 
 ### 🏠 Home Page
 
-("C:\Users\Chitti\OneDrive\图片\Screenshots\Screenshot 2026-06-27 205204.png")
+("homepage.pdf")
 
 ### 📊 Prediction Result
 
-("C:\Users\Chitti\OneDrive\图片\Screenshots\Screenshot 2026-06-27 204929.png")
+("prediction result.pdf")
 
 ---
 
