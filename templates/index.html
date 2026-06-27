@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Comprehensive Measure of Well-Being</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>A Comprehensive Measure of Well-Being</h1>
+
+    <p class="subtitle">
+        Human Development Index (HDI) Prediction System
+    </p>
+
+    <form action="/predict" method="POST">
+
+        <label>Country Code</label>
+        <input type="number" name="Country" required>
+
+        <label>Life Expectancy</label>
+        <input type="number" step="0.01" name="Life expectancy" required>
+
+        <label>Expected Years of Schooling</label>
+        <input type="number" step="0.01" name="Expected years of schooling" required>
+
+        <label>Mean Years of Schooling</label>
+        <input type="number" step="0.01" name="Mean years of schooling" required>
+
+        <label>Gross National Income (GNI) Per Capita</label>
+        <input type="number" step="0.01" name="Gross national income (GNI) per capita" required>
+
+        <button type="submit">
+            Predict HDI
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
