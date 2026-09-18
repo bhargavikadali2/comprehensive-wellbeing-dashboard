@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HDI Prediction Result</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <div class="card result-card">
+
+        <div class="icon">
+            📊
+        </div>
+
+        <h1>
+            Prediction Result
+        </h1>
+
+        <p class="subtitle">
+            Human Development Index
+        </p>
+
+
+        <div class="result-box">
+
+            <h2>
+                Predicted HDI Score
+            </h2>
+
+            <div class="score">
+                {{ prediction }}
+            </div>
+
+            <p class="level">
+                {{ level }}
+            </p>
+
+        </div>
+
+
+        <div class="explanation">
+
+            <p>
+                The predicted HDI score is based on
+                Life Expectancy, Mean Years of Schooling,
+                Expected Years of Schooling and
+                GNI Per Capita.
+            </p>
+
+        </div>
+
+
+        <a href="/" class="predict-again">
+            ← Predict Again
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comprehensive Well-Being Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <div class="card">
+
+        <div class="header">
+
+            <div class="icon">
+                🌍
+            </div>
+
+            <h1>
+                Comprehensive Well-Being Dashboard
+            </h1>
+
+            <p class="subtitle">
+                A Comprehensive Measure of Well-Being
+            </p>
+
+            <p class="description">
+                Enter health, education and income indicators
+                to predict the Human Development Index.
+            </p>
+
+        </div>
+
+
+        <form action="/predict" method="POST">
+
+            <div class="form-group">
+
+                <label for="life_expectancy">
+                    Life Expectancy
+                </label>
+
+                <input
+                    type="number"
+                    step="0.01"
+                    id="life_expectancy"
+                    name="life_expectancy"
+                    placeholder="Example: 70.5"
+                    required
+                >
+
+                <small>
+                    Average life expectancy in years
+                </small>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="mean_years">
+                    Mean Years of Schooling
+                </label>
+
+                <input
+                    type="number"
+                    step="0.01"
+                    id="mean_years"
+                    name="mean_years"
+                    placeholder="Example: 8.5"
+                    required
+                >
+
+                <small>
+                    Average years of education completed
+                </small>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="expected_years">
+                    Expected Years of Schooling
+                </label>
+
+                <input
+                    type="number"
+                    step="0.01"
+                    id="expected_years"
+                    name="expected_years"
+                    placeholder="Example: 13.5"
+                    required
+                >
+
+                <small>
+                    Expected years of education
+                </small>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="gni">
+                    GNI Per Capita
+                </label>
+
+                <input
+                    type="number"
+                    step="0.01"
+                    id="gni"
+                    name="gni"
+                    placeholder="Example: 12000"
+                    required
+                >
+
+                <small>
+                    Gross National Income per capita
+                </small>
+
+            </div>
+
+
+            <button type="submit">
+                🔍 Predict HDI
+            </button>
+
+        </form>
+
+
+        <div class="info-box">
+
+            <strong>
+                How it works?
+            </strong>
+
+            <p>
+                The machine learning model analyzes four
+                development indicators and predicts the
+                Human Development Index (HDI) score.
+            </p>
+
+        </div>
+
+
+        <div class="footer">
+
+            <p>
+                Machine Learning • Python • Flask
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
